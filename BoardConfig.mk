@@ -46,6 +46,7 @@ BOARD_KERNEL_CMDLINE += skip_initramfs rootwait ro init=/init
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.avb_version=1.0 androidboot.vbmeta.avb_version=1.0
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := lavender-perf_defconfig
 BOARD_KERNEL_SEPARATED_DTBO := true
 
