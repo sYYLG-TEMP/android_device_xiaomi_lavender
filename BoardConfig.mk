@@ -34,6 +34,9 @@ TARGET_OTA_ASSERT_DEVICE := lavender
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
+# Enable System As Root even for non-A/B from P onwards
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
 # FM
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 BOARD_HAS_QCA_FM_SOC := cherokee
