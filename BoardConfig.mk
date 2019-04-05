@@ -30,6 +30,11 @@ DEVICE_PATH := device/xiaomi/lavender
 # Assert
 TARGET_OTA_ASSERT_DEVICE := lavender
 
+# AVB
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
