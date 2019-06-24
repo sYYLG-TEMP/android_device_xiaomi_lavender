@@ -18,3 +18,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heaptargetutilization=0.6 \
     dalvik.vm.heapminfree=8m \
     dalvik.vm.heapmaxfree=16m
+
+# USB debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
