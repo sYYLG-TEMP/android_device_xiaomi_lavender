@@ -52,11 +52,14 @@ BOARD_HAVE_QCOM_FM := true
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.avb_version=1.0 androidboot.vbmeta.avb_version=1.0
 TARGET_KERNEL_CONFIG := lavender-perf_defconfig
+BOARD_KERNEL_SEPARATED_DTBO := true
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/vendor_framework_compatibility_matrix.xml
 
+# Partitions
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648
 
