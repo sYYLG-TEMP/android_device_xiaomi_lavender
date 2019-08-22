@@ -50,6 +50,7 @@ BOARD_HAS_QCA_FM_SOC := cherokee
 BOARD_HAVE_QCOM_FM := true
 
 # Kernel
+BOARD_KERNEL_CMDLINE += androidboot.avb_version=1.0 androidboot.vbmeta.avb_version=1.0
 TARGET_KERNEL_CONFIG := lavender-perf_defconfig
 
 # Manifest
