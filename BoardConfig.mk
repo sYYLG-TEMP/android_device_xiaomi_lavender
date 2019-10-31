@@ -42,6 +42,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Enable System As Root even for non-A/B from P onwards
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+BOARD_KERNEL_CMDLINE += skip_initramfs rootwait ro init=/init
 
 # FM
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
