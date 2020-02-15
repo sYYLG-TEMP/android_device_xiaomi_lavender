@@ -54,11 +54,7 @@ PRODUCT_BOOT_JARS += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-lineage
-
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
+    $(DEVICE_PATH)/overlay
 
 # Ramdisk
 PRODUCT_PACKAGES += \
