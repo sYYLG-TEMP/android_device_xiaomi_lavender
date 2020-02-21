@@ -44,11 +44,6 @@ TARGET_SCREEN_WIDTH := 1080
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_KERNEL_CMDLINE += skip_initramfs rootwait ro init=/init
 
-# FM
-AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
-BOARD_HAS_QCA_FM_SOC := cherokee
-BOARD_HAVE_QCOM_FM := true
-
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.avb_version=1.0 androidboot.vbmeta.avb_version=1.0
 TARGET_KERNEL_CONFIG := lavender-perf_defconfig
