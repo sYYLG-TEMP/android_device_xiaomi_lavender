@@ -28,7 +28,6 @@
 DEVICE_PATH := device/xiaomi/lavender
 
 # Assert
-TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := lavender
 
 # AVB
@@ -55,8 +54,10 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_lavender
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+
+# Security patch level
+VENDOR_SECURITY_PATCH := 2018-11-01
 
 # Inherit the proprietary files
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk

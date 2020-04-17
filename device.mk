@@ -45,10 +45,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.device.rc
 
-# Recovery
-PRODUCT_PACKAGES += \
-    librecovery_updater_lavender
-
 # Sensors
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
